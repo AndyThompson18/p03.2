@@ -22,7 +22,7 @@ Tests:
 
 """
 
-# Use this to test your solution. Don't edit it!
+# Use this to test your solution. Don't eat it!
 import doctest
 def run_tests():
     doctest.testmod(verbose=True)
@@ -30,4 +30,8 @@ def run_tests():
 
 # Edit this code
 def clue(word):
-
+    new_word = ""
+    for char in word:
+        if char != "u" and char != "i" and char != "a" and char != "o" and char != "e":
+            new_word = new_word + char
+    print(new_word)
